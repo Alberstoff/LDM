@@ -1,0 +1,36 @@
+body {
+    background-color:#D3DBDE;
+    font-family:sans-serif;
+    text-align: justify;
+    }
+    h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    p.normal {
+    font-size: 17px;
+    background-color:#B6C2C9 ;
+    }
+    h2 {
+    color: #4C4B64;
+    font-size: 30px;
+    background-color: #7B929D;
+    text-decoration: underline;
+
+    }
+    h3 {background-color: #98AAB3;
+    color: #5D6B75;
+    }
+    p.autor {
+        text-align: right;
+        background-color: white;
+    }
+    strong {
+        color: #006699;
+        font-weight: normal;
+    }
+    em {
+        color: #0088cc;
+        font-style: normal;
+        font-weight: bold;

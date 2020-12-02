@@ -1,0 +1,26 @@
+body {
+    background-color: #2D8652;
+    }
+    h1 {
+    font-size: 50px;
+    }
+    p {
+    font-size: 30px;
+    }
+    p.blanco{
+    color: white;
+    font-style: oblique;
+    }
+    p.amarillo {
+    color:#FFDFB3;
+    font-family: serif;
+    }
+    p.naranja {
+    color: #FF9F1A;
+    font-family: monospace;
+    font-size: 35px;
+    }
+    p.rojo{
+    color: #E6194D;
+    font-family: cursive;
+    }
