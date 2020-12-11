@@ -35,7 +35,7 @@ padding-right: 37%;}
     border:2px solid black;
 }
 .poema4 {
-    color: green; ç
+    color: green; 
     background-image: url("caballo.svg"), url("estrellas.png");
     background-position: bottom left, top right;
     background-repeat: repeat-x,repeat;
