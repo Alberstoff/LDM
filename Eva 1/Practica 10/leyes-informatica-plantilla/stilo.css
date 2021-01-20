@@ -1,0 +1,64 @@
+h1 {font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center; 
+letter-spacing: 15px;
+text-transform: uppercase;
+}
+
+.lm {text-transform: initial ; 
+    font-size: 45px; 
+    float: left; 
+    color: #0000ff;
+}
+
+.inicio {padding: 40px; 
+    text-align: justify;
+}
+
+.img1 {float: left; 
+    border: solid white 5px ; 
+    outline: 1px solid black; 
+    width: 160px;
+}
+
+.img2 {float: left; 
+    border: solid white 5px ; 
+    outline: 1px solid black; 
+    width: 130px;
+    margin-left: 10px;
+}
+h2 {font-family: inherit; 
+    color: white;
+    background-color: #0000ff;}
+
+.principal {background-color: #acdae4}
+
+.derecha {margin-left: 200px;}
+
+.textomargen {margin-left: 15px; 
+    margin-right: 10px; 
+    text-align: justify;}
+
+.textomargen2 {margin-left: 200px;
+    margin-right: 10px;
+    text-align: justify;}
+
+body { 
+    font-family: sans-serif;
+    background-image: url(chip-abajo.jpg), url(chip-arriba.jpg);
+    background-repeat: repeat-y, repeat-y;
+    background-position: top right, top left;
+    background-size: 50px, 50px;
+    padding: 80px;
+}
+
+.subrrayado {color: black;}
+
+u {color: red;
+}
+
+.ano {color: red;
+    font-size: 20px;
+}
+.nombres {text-transform: capitalize;
+font-size: 20px;}
