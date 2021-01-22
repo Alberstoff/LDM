@@ -1,0 +1,7 @@
+<!DOCTYPE receta SYSTEM "receta2.dtd">
+<receta>
+<parrafo>Esto es un párrafo</parrafo>
+<titulo>...</titulo>
+<ingredientes>...</ingredientes>
+<procedimiento>...</procedimiento>
+</receta>

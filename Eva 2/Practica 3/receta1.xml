@@ -1,0 +1,12 @@
+<!DOCTYPE receta SYSTEM "receta1.dtd">
+
+<receta>
+
+<titulo>Primera receta</titulo>
+
+<ingredientes>...</ingredientes>
+
+<procedimiento>...</procedimiento>
+
+</receta>
+
