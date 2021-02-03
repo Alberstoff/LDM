@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE listapersonas SYSTEM "lista.dtd"> 
+<listapersonas xmlns="https://www.w3schools.com"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://www.w3schools.com/xml Tercero.xsd">>
+<persona>
+<nombre>Antonio Moreno</nombre>
+<fecha_nacimiento>27-11-2008</fecha_nacimiento>
+<sexo>Varón</sexo>
+</persona>
+</listapersonas>
