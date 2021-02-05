@@ -12,10 +12,10 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
             <xs:element name="nombre" type="xs:string"/>
              <xs:element name="fecha_nacimiento" type="xs:string"/>
               <xs:element name="sexo" type="xs:string"/>
-         </xs:sequence>
-        </xs:complexType>
-        </xs:element> 
-         </xs:sequence>
-        </xs:complexType>     
-    </xs:element>
+        </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
 </xs:schema>
