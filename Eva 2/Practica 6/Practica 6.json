@@ -1,0 +1,61 @@
+{
+    "ciclo": {
+      "nombre": "DAM",
+
+      "inicio_ciclo": {
+        "dia": "15",
+        "mes": "septiembre",
+        "anio": "2021"
+      },
+
+      "fin_ciclo": {
+        "dia": "30",
+        "mes": "junio",
+        "anio": "2022"
+      },
+
+      "modulo": {
+        "nombre": "LDM y SGI",
+        "horas": "4",
+        "caracter": "obligatorio",
+        
+        "alumno": [
+          {
+            "nombre": "Ana",
+            "apellidos": "Fernandez Gutiérrez",
+            "nif": "16965696L",
+            "datoscurso": {
+              
+            },
+            "contacto": {
+              "telefono": "789654321",
+              "email": "ana.fdezgtrrez@hotmail.com"
+            },
+            "direccion": {
+              "direccionnombre": "C/El Percebe, 13",
+              "ciudad": "Santander",
+              "CP": "39302"
+            }
+          },
+          {
+            "nombre": "Pepito",
+            "apellidos": "Grillo",
+            "nif": "98765432H",
+            "datoscurso": {
+              "nota": "Apto",
+              "faltas": "0"
+            },
+            "contacto": {
+              "telefono": "656566555",
+              "email": "yhyh@yahoo.com"
+            },
+            "direccion": {
+              "direccionnombre": "Avd/El Pez, 5",
+              "ciudad": "Suances",
+              "CP": "39401"
+            }
+          }
+        ]
+      }
+    }
+  }
