@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cartelera>
+    <peliculas>
+        <pelicula>
+            <titulo>La invención de Hugo</titulo>
+            <ano>2011</ano>
+            <director>2011</director>
+            <identificador></identificador>
+        </pelicula>
+         <pelicula>
+            <titulo>John Carter</titulo>
+            <ano>2012</ano>
+            <director>Andrew Stanton</director>
+            <identificador></identificador>
+        </pelicula>
+         <pelicula>
+            <titulo>Intocable</titulo>
+            <ano>2001</ano>
+            <director>Olivier Nakache</director>
+            <identificador></identificador>
+        </pelicula>
+    </peliculas>
+</cartelera>

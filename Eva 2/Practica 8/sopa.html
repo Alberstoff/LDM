@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="sopa.css">
+    <title>Receta Sopa Cebolla</title>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <h1>Receta: {{jsonObject.nombre}}</h1>
+      <h3>{{jsonObject.tipo}} {{jsonObject.numero}}</h3>
+      <h2>{{titulotabla}}</h2>
+      <button @click="showtabla" v-if="!mostrartabla" class="btn btn-primary">Mostrar ingredientes</button>
+      <button @click="ocultartabla" v-if="mostrartabla" class="btn btn-primary">Ocultar ingredientes</button>
+      <table  class="table-info" v-if="mostrartabla">
+          <th>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Unidad</th>
+                </tr>
+          </th>
+          <tb>
+              <tr v-for="ingrediente in jsonObject.ingredientes">
+                  <td>{{ingrediente.nombre}}</td>
+                  <td v-if="ingrediente.cantidad =='100'"><b>{{ingrediente.cantidad}}</b></td>
+                  <td v-else>{{ingrediente.cantidad}}</td>
+                  <td>{{ingrediente.unidad}}</td>
+              </tr>
+          </tb>
+              </table>
+              <h2> {{tituloproceso}} </h2>
+              <button @click="showproceso" v-if="!mostrarproceso" class="btn btn-primary">Mostrar Proceso</button>
+              <button @click="ocultarproceso" v-if="mostrarproceso" class="btn btn-primary">Ocultar Proceso</button>
+        <ul v-if= "mostrarproceso">
+            <li v-for="proceso in jsonObject.proceso">{{proceso.descripcion}}</li>
+        </ul>
+    </body>
+
+      <script>
+
+        const App = new Vue({
+          el: '#app',
+          data: {
+            jsonObject: {},
+            mostrartabla: true,
+            titulotabla: "Ingredientes",
+            mostrarproceso: true,
+            tituloproceso:"Proceso",
+          },
+          methods: {
+              init() {
+                fetch("https://raw.githubusercontent.com/byortega/LDM/master/JSON/tarea1.json")
+                .then(response => response.json())
+                .then(data => (this.jsonObject = data));
+              },
+              showtabla(){
+                this.mostrartabla = true;
+                this.titulotabla= "Ingredientes detalles";
+              },
+              ocultartabla(){
+                this.mostrartabla = false;
+                this.titulotabla= "Ingredientes";
+              },
+              showproceso(){
+                this.mostrarproceso = true;
+                this.tituloproceso= "Proceso detalles";
+              },
+              ocultarproceso(){
+                this.mostrarproceso = false;
+                this.tituloproceso= "Proceso";
+              }
+          },
+          mounted(){
+              this.init()
+          }
+        })
+      </script>
+      </html>

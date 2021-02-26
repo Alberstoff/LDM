@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+            <title>Cinco peliculas mas valoradas de la historia</title>
+            <description>Top 5 peliculas mejor valoradas en metacritic</description>
+            <link>https://www.metacritic.com/browse/movies/score/metascore/all/filtered?sort=desc/</link>  
+              
+        <item>
+         <title>Citizen Kane</title>
+            <description>Drama, Misterio 1941</description>
+            <link>https://www.metacritic.com/movie/citizen-kane-1941</link> 
+        </item>
+        <item>
+         <title>El Padrino</title>
+            <description>Drama,Thriller, Crimen 1972</description>
+            <link>https://www.metacritic.com/movie/the-godfather</link> 
+        </item>
+        <item>
+        <title>Casablanca</title>
+            <description>Drama,Thriller, Crimen 1972</description>
+            <link>https://www.metacritic.com/movie/casablanca</link> 
+        </item>
+        </channel>
+       </rss>
+            
+            
+
