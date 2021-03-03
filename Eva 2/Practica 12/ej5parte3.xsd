@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="https://www.w3schools.com"
+    xmlns="https://www.w3schools.com"
+    elementFormDefault="qualified">
+    <xs:element name="cartelera">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="peliculas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pelicula">
+                                <xs:complexType>
+                                    <xs:element type="xs:string" name="titulo"/>
+                                    <xs:element type="xs:string" name="ano"/>
+                                    <xs:element type="xs:string" name="director"/>
+                                    <xs:element type="xs:string" name="identificador"/>
+                                </xs:complexType>   
+                            </xs:element>                     
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cines">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cine">
+                                <xs:complexType>
+                                    <xs:element type="xs:string" name="nombre"/>
+                                    <xs:element type="xs:string" name="sala"/>
+                                    <xs:element type="xs:string" name="identificador"/>
+                                    <xs:element type="xs:string" name="sesion"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
+            
