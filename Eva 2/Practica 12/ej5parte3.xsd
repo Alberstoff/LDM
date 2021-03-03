@@ -12,10 +12,12 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
                         <xs:sequence>
                             <xs:element name="pelicula">
                                 <xs:complexType>
-                                    <xs:element type="xs:string" name="titulo"/>
-                                    <xs:element type="xs:string" name="ano"/>
-                                    <xs:element type="xs:string" name="director"/>
-                                    <xs:element type="xs:string" name="identificador"/>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="titulo"/>
+                                        <xs:element type="xs:string" name="ano"/>
+                                        <xs:element type="xs:string" name="director"/>
+                                        <xs:element type="xs:string" name="identificador"/>
+                                    </xs:sequence>
                                 </xs:complexType>   
                             </xs:element>                     
                         </xs:sequence>
@@ -26,10 +28,12 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema"
                         <xs:sequence>
                             <xs:element name="cine">
                                 <xs:complexType>
-                                    <xs:element type="xs:string" name="nombre"/>
-                                    <xs:element type="xs:string" name="sala"/>
-                                    <xs:element type="xs:string" name="identificador"/>
-                                    <xs:element type="xs:string" name="sesion"/>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="nombre"/>
+                                        <xs:element type="xs:string" name="sala"/>
+                                        <xs:element type="xs:string" name="identificador"/>
+                                        <xs:element type="xs:string" name="sesion"/>
+                                    </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
