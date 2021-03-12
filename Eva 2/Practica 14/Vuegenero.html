@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Prueba segunda evaluación</title>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div v-for="eo in jsonObject.results">
+            <h1 v-if="eo.gender == 'male'"><small style="background-color: rgb(104, 70, 255)">{{eo.gender}}</small></h1>
+            <h1 v-else="eo.gender == 'female'"><small style="background-color: rgb(72, 255, 0)">{{eo.gender}}</small></h1>
+
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    const App = new Vue({
+        el: '#app',
+        data: {
+            jsonObject: {}
+        },
+        methods: {
+            init() {
+                fetch("https://randomuser.me/api/")
+                    .then(response => response.json())
+                    .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted() {
+            this.init()
+        }
+    })
+</script>
+
+</html>

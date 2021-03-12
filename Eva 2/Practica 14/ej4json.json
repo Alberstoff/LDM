@@ -1,0 +1,29 @@
+{
+    "empresa": {
+        "nombre": "Distanza SA"
+        ,"direccion":"Madrid"
+    },
+    "pedido": [
+        {
+            "codigo":"9823"
+            ,"trabajador":"pepe"
+            ,"fechapedido":"09/08/2018"
+            ,"observaciones":"ninguna"
+            ,"plazorevision":"10"
+            ,"articulos": {
+                "articulo":[
+                    {
+                        "codigo":"pepe"
+                        ,"unidades":"5"
+                        ,"precio":"50"
+                        ,"observacion":""
+                    }
+                    
+                ]
+            }
+            
+            
+        }
+    ]
+
+}

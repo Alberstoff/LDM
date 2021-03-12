@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Prueba segunda evaluación</title>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <div v-for="vacio in jsonObject" class="alert alert-info" role="alert">
+            <h1>{{vacio.name}}</h1>
+            <p>{{vacio.description}}</p>
+            <p>Si le das a la imagen, te manda a la direccion de la Api</p>
+            <a :href="vacio.image_url">
+                <img :src="vacio.image_url">
+            </a>
+            <h3>Metodo</h3>
+            <ol>
+                <li v-for="metodo in vacio.method.mash_temp">Temperatura: {{metodo.temp.value}}-{{metodo.temp.unit}}- Duración: {{metodo.duration}} </li>
+            </ol>
+            <h3>Ingredientes</h3>
+            <ol>
+                <li v-for="datos in vacio.ingredients.malt">{{datos.name}}-{{datos.amount.value}}{{datos.amount.unit}} </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+    const App = new Vue({
+        el: '#app',
+        data: {
+            jsonObject: {}
+        },
+        methods: {
+            init() {
+                fetch("https://api.punkapi.com/v2/beers?per_page=5")
+                    .then(response => response.json())
+                    .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted() {
+            this.init()
+        }
+    })
+</script>
+
+</html>

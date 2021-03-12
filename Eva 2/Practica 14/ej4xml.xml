@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa [
+<!ELEMENT empresa (pedido*)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT pedido (trabajador*,fechapedido*,observaciones*,plazorevision*,articulos*)>
+<!ELEMENT trabajador (#PCDATA)>
+<!ELEMENT fechapedido (#PCDATA)>
+<!ELEMENT observaciones (#PCDATA)>
+<!ELEMENT plazorevision (#PCDATA)>
+<!ELEMENT articulos (articulo*)>
+<!ELEMENT articulo (#PCDATA)>
+
+
+<!ATTLIST empresa nombre CDATA #IMPLIED>
+<!ATTLIST pedido codigo CDATA #IMPLIED>
+<!ATTLIST articulo codigo CDATA #IMPLIED>
+<!ATTLIST articulo unidades CDATA #IMPLIED>
+<!ATTLIST articulo precio CDATA #IMPLIED>
+<!ATTLIST articulo observacion CDATA #IMPLIED>
+
+]>
+<empresa nombre="Distanza SA">
+    <direccion></direccion>
+        <pedido codigo="Hieodpsw">
+            <trabajador>pepe</trabajador>
+            <fechapedido>09-08-2016</fechapedido>
+            <observaciones>eso</observaciones>
+            <plazorevision>10</plazorevision>
+            <articulos>
+                <articulo codigo="597" unidades="3" precio="6" observacion=""></articulo>
+            </articulos>
+        </pedido>
+</empresa>
