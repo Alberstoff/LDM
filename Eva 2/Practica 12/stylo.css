@@ -1,1 +1,37 @@
-espanol {initial-letter: red; font-size: 20px;border:solid red 4px;}
+palabras{
+    text-align: center;
+    font-size: 40px;
+    
+}
+.palabra1{
+    border: black 5px solid;
+    margin:1%;
+    float: left;  
+    padding: 1%;  
+}
+
+espanol{
+ border: red 5px solid;
+ display: block;
+ margin-top: 2%;
+ margin-left: 2%;
+ margin-right: 2%;
+ margin-bottom: 2%;
+}
+ingles{
+    border: blue 5px solid;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+frances{
+    border: green 5px solid;
+    display: block;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+espanol::first-letter{
+    color: red;
+}

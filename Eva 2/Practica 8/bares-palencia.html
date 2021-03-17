@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Bares Palencia</title>
+  </head>
+
+  <body>
+    <div id="app" class="container">
+        <div class="alert alert-info" role="alert">
+        <h1 class="alert-heading">Ciudad: {{jsonObject.Ciudad}}</h1>
+        <!--  CAMPOS SIMPLES -->
+        <ul>
+          <li>Comunidad: {{jsonObject.Comunidad}}</li>  
+          <li>Habitantes: {{jsonObject.Habitantes}}</li>  
+        </ul>
+        <h2 class="alert-heading">Bares</h2>
+        <div v-for="Bar in jsonObject.Bares">
+        <ol>
+        <li>nombre: {{Bar.Nombre}}</li>
+        <li>Coste{{Bar.Coste}}</li>
+        <li>Dirección: {{Bar.Dirección}}</li>
+        <li>Tipo: {{Bar.Tipo}}</li>
+        <li>Recomendable: {{Bar.Recomendable}}</li>
+        </ol>
+      </div>
+      <h2 class="alert-heading">Ocio</h2>
+    <div v-for="Ocio in jsonObject.Ocio">
+    <ol>
+      <li>nombre: {{Ocio.Nombre}}</li>
+      <li>Dirección: {{Ocio.Dirección}}</li>
+      <li>Tipo: {{Ocio.Tipo}}</li>
+      <li>Recomendable: {{Ocio.Recomendable}}</li>
+      </ol>
+</div>
+    <script>
+
+      const App = new Vue({
+        el: '#app',
+        data: {
+          jsonObject: {}
+        },
+        methods: {
+            init() {
+              fetch("https://raw.githubusercontent.com/Arrako23/LDM/master/PR%C3%81CTICAS/P-2-LDM-2/ocio.json")
+              .then(response => response.json())
+              .then(data => (this.jsonObject = data));
+            }
+        },
+        mounted(){
+            this.init()
+        }
+      })
+    </script>
+  </body>
+</html>

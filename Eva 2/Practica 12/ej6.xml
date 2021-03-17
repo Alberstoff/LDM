@@ -1,14 +1,14 @@
 <?xml-stylesheet type="text/css" href="stylo.css"?>
 <palabras>
-    <palabra>
+    <palabra class="palabra1">
         <espanol>perro</espanol>
         <frances>chien</frances>
     </palabra>
-    <palabra>
+    <palabra class="palabra1">
         <espanol>gato</espanol>
         <ingles>cat</ingles>
     </palabra>
-    <palabra>
+    <palabra class="palabra1">
         <espanol>león</espanol>
         <frances>lion</frances>
         <ingles>lion</ingles>
