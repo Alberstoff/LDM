@@ -1,0 +1,59 @@
+<cine>
+    <pelicula>
+        <id_pelicula>1</id_pelicula>
+        <titulo>Matrix</titulo>
+        <duracion>136</duracion>
+        <anio>1999</anio>
+        <actores>
+            <actor>
+                <id_actor>105</id_actor>
+                <nombre_actor>Keanu Reeves</nombre_actor>
+                <nacionalidad_actor>Canada</nacionalidad_actor>
+                <genero_actor>Masculino</genero_actor>
+            </actor>
+        <director>
+            <id_director>68</id_director>
+            <nombre_director>Lana Wachowski</nombre_director>
+            <nacionalidad_director>Estados Unidos</nacionalidad_director>
+            <genero_director>Femenino</genero_director>
+        </director>
+    </pelicula>
+     <pelicula>
+        <id_pelicula></id_pelicula>
+        <titulo></titulo>
+        <duracion></duracion>
+        <anio></anio>
+        <actores>
+            <actor>
+                <id_actor></id_actor>
+                <nombre_actor></nombre_actor>
+                <nacionalidad_actor></nacionalidad_actor>
+                <genero_actor></genero_actor>
+            </actor>
+        <director>
+            <id_director></id_director>
+            <nombre_director></nombre_director>
+            <nacionalidad_director></nacionalidad_director>
+            <genero_director></genero_director>
+        </director>
+    </pelicula>
+     <pelicula>
+        <id_pelicula></id_pelicula>
+        <titulo></titulo>
+        <duracion></duracion>
+        <anio></anio>
+        <actores>
+            <actor>
+                <id_actor></id_actor>
+                <nombre_actor></nombre_actor>
+                <nacionalidad_actor></nacionalidad_actor>
+                <genero_actor></genero_actor>
+            </actor>
+        <director>
+            <id_director></id_director>
+            <nombre_director></nombre_director>
+            <nacionalidad_director></nacionalidad_director>
+            <genero_director></genero_director>
+        </director>
+    </pelicula>
+</cine>
